@@ -1,0 +1,253 @@
+/* Global Reset */
+body, h1, p, div, video, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow: auto; 
+ /* Allows scrolling */
+}
+
+/* Full-screen video */
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; /* Places the video behind other content */
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  color: white;
+  position: relative; /* Keeps content above the video */
+  z-index: 1; /* Ensures content is above the video */
+  padding: 0 2rem;
+}
+
+/* Header */
+.header { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.nav {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Main Content */
+.main {
+  display: flex;                /* Enables Flexbox */
+  flex-direction: column;       /* Stacks items vertically */
+  justify-content: flex-end;    /* Pushes items to the bottom of the container */
+  align-items: flex-start;      /* Aligns items horizontally to the left */
+  padding-bottom: 2rem;
+}
+
+.tagline h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tagline p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to stack on smaller screens */
+  gap: 1.8rem;
+}
+
+.buttons button {
+  padding: 1rem 2rem;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+/* Image Section */
+.image-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #111; /* Optional: Add contrast to this section */
+  min-height: 100vh; /* Full height for the image section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.second-page{
+  display:flex;
+  flex-direction: column;
+}
+.second-page-top{
+  min-height:50%;
+  font-size:50px;
+  font-weight: 500;
+  text-align: center;
+  padding:0 6rem;
+  /* font-family:Visby Semibold; */
+  margin: 6rem auto;
+ 
+
+}
+
+.second-page-bottom{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  min-height: 100vh;
+  background-color:beige;
+
+}
+
+.second-page-bottom-left{
+  height:100vh;
+  width:50%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width:50%;
+  margin:5rem auto;
+  justify-content: space-between;
+}
+
+.img-container h1{
+  font-size:20px;
+  
+  text-align: center;
+}
+.img-container img{
+  height:50vh;
+  width:100%;
+  background-color: beige;
+  
+}
+
+.second-page-bottom-right{
+  height:100vh;
+  width:50%;
+  background-color:olive;
+}
+/* Responsive Design */
+
+/* For screens less than 1024px (Tablet and smaller laptops) */
+@media (max-width: 1024px) {
+  .tagline h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline p {
+    font-size: 1.2rem;
+  }
+
+  .buttons button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav a {
+    margin: 0 0.5rem;
+  }
+}
+
+
+
+/* For screens less than 768px (Mobile devices) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack logo and nav vertically */
+    text-align: center;
+  }
+
+  .nav {
+    font-size: 18px;
+    margin-top: 0.5rem;
+  }
+
+  .main {
+    padding-bottom: 4rem;
+    align-items: center; /* Center-align content for mobile */
+    text-align: center;
+  }
+
+  .tagline h1 {
+    font-size: 2rem;
+  }
+
+  .tagline p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .buttons button {
+    width: 100%; /* Make buttons full-width for smaller screens */
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+ 
+
+
+}
+
+/* For screens less than 480px (Small mobile devices) */
+@media (max-width: 480px) {
+  .tagline h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline p {
+    font-size: 0.9rem;
+  }
+
+  .buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+}
