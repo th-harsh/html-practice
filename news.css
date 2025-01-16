@@ -42,6 +42,7 @@ nav {
   width: 92%;
   height: 70px;
   display: flex;
+  gap: 15px;
   justify-content: space-between;
 }
 
@@ -56,8 +57,9 @@ nav {
   width: 40px;
   height: 8px;
   background-color: transparent;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 .logo {
@@ -76,15 +78,17 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 20px;
   align-items: center;
 }
 
 li {
   cursor: pointer;
   display: inline;
-  margin: 14px;
   font-size: 20px;
   color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .text-container {
@@ -104,6 +108,7 @@ li {
 
 article {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -114,6 +119,45 @@ article {
   font-size: 60px;
   letter-spacing: 2px;
   text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  width: 90%;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 35px;
+  justify-content: center;
+}
+
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  padding: 1%;
+}
+
+.card:hover img {
+  border-radius: 0px;
+  width: 105%;
+  height: auto;
+  transition: 0.4s;
+}
+
+.card img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+}
+
+.action p {
+  color: rgb(176, 143, 98);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* Design for tab */
