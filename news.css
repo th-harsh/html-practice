@@ -74,7 +74,7 @@ nav {
   width: 100%;
 }
 
-ul {
+header ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -82,13 +82,28 @@ ul {
   align-items: center;
 }
 
-li {
+header li {
   cursor: pointer;
   display: inline;
   font-size: 20px;
   color: white;
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+.un {
+  display: inline-block;
+  padding-bottom: 1px;
+  background-image: linear-gradient(white 0 0);
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+
+.un:hover {
+  background-position: 100% 100%;
+  background-size: 100% 1px;
 }
 
 .text-container {
@@ -138,6 +153,7 @@ article {
   height: auto;
   border-radius: 12px;
   padding: 1%;
+  object-fit: cover;
 }
 
 .card:hover img {
@@ -151,7 +167,7 @@ article {
   border-radius: 12px;
   width: 100%;
   height: auto;
-  max-height: 350px;
+  max-height: 340px;
 }
 
 .action p {
@@ -160,13 +176,198 @@ article {
   text-underline-offset: 2px;
 }
 
+.down-part {
+  width: 96%;
+  background-color: rgb(227, 227, 227);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  padding: 2%;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+
+  height: auto;
+}
+
+.left img {
+  max-height: 530px;
+}
+
+.right {
+  display: block;
+  width: 70vh;
+  padding: 5%;
+  align-items: center;
+  align-content: center;
+  height: auto;
+}
+
+.right h3 {
+  color: grey;
+  line-height: 0;
+  font-size: 30px;
+}
+
+.right h1 {
+  font-size: 40px;
+}
+
+.right p {
+  font-size: 22px;
+}
+
+button {
+  padding: 25px 40px;
+  color: black;
+  font-family: Visby;
+  border-radius: 80px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 2px solid black;
+}
+
+#read-more {
+  width: 100%;
+}
+
+#read-more:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+li {
+  cursor: pointer;
+}
+
+.signup {
+  padding: 60px 0px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+  background-color: rgb(44, 108, 124);
+}
+
+.text {
+  color: white;
+  font-size: 26px;
+  width: 300px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.input {
+  width: 500px;
+}
+
+input {
+  font-family: Visby;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.btn button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn button:hover {
+  background-color: white;
+  color: rgb(44, 108, 124);
+  transition: 0.4s;
+}
+
+::placeholder {
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  display: block;
+  color: white;
+}
+
+.upper-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4%;
+  background-color: rgb(28, 27, 27);
+}
+
+.upper-footer ul {
+  display: contents;
+  margin: 20px;
+}
+
+.upper-footer ul li {
+  list-style-type: none;
+  padding: 10px 0px;
+  font-size: 22px;
+}
+
+#social-div {
+  margin-top: 20px;
+}
+
+#social li {
+  display: inline;
+  margin-right: 12px;
+}
+
+.lower-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4%;
+  background-color: rgb(28, 27, 27);
+}
+
+.end-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.end-footer p {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.end-footer img {
+  width: 100%;
+}
+
 /* Design for tab */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .menu-bar {
     display: inline-block;
   }
 
-  ul {
+  header ul {
     display: none;
   }
 
@@ -178,21 +379,61 @@ article {
     font-size: 30px;
   }
 
+  .signup {
+    justify-content: center;
+    padding: 30px 0px;
+  }
+
+  .text {
+    width: 200px;
+    font-size: 25px;
+  }
+
+  .input {
+    width: 240px;
+  }
+
+  .btn button {
+    padding: 20px 45px;
+    font-size: 14px;
+  }
+
   .upper-part h1 {
     font-size: 40px;
+  }
+
+  .upper-footer ul li {
+    font-size: 16px;
+  }
+
+  .upper-footer h2 {
+    font-size: 20px;
+  }
+
+  .end-footer p {
+    font-size: 35px;
   }
 }
 
 /* Design for mobile */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    display: block;
+    min-width: 320px;
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   header {
     height: 60vh;
   }
+
   .menu-bar {
     display: inline-block;
   }
 
-  ul {
+  header ul {
     display: none;
   }
 
@@ -207,6 +448,52 @@ article {
   }
 
   .upper-part h1 {
+    font-size: 30px;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .left img {
+    width: 70%;
+  }
+
+  .signup {
+    display: block;
+    padding: 30px 0px;
+  }
+
+  .text {
+    margin: 20px;
+  }
+
+  .input {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .btn button {
+    margin: 20px;
+    padding: 20px 35px;
+    font-size: 16px;
+  }
+
+  .upper-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lower-footer img {
+    width: 200px;
+    height: 70px;
+  }
+
+  .end-footer p {
     font-size: 30px;
   }
 }
