@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Visby";
+    src: url("assets/fonts/Visby-CF/Demo_Fonts/Fontspring-DEMO-visbycf-medium.otf");
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +10,8 @@
 }
 body{
     color: #fff;
-    font-family: "Visby Regular";
+    /* font-family: "Visby Regular"; */
+    font-family: Visby;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.4;
