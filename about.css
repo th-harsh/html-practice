@@ -13,7 +13,7 @@ body{
     /* font-family: "Visby Regular"; */
     font-family: Visby;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.4;
     overflow-x:hidden
 }
@@ -57,7 +57,7 @@ a{
 .nav-links>li>a{
     text-decoration: none;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     align-self: flex-end;
     justify-self: end;
@@ -113,7 +113,7 @@ a{
 }
 
 .section p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 1rem 0px;
 }
@@ -164,7 +164,7 @@ a{
 }
 .paragraph{
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding-left: 3vw;
     padding-right: 10vw;
@@ -479,7 +479,7 @@ a{
 }
 .inner-container a{
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .inner-container h3{
     font-size: 2rem;
@@ -673,10 +673,10 @@ a{
         padding: 0;
     }
     .second-part{
-        padding: 0vh 5vw 0vh;
+        padding: 1.2vh 5vw;
     }
     .third-part {
-        padding: 0vh 5vw 0vh;
+        padding: 1.2vh 5vw;
     }
     .second-part p:first-child {
         font-size: 1.7rem;
