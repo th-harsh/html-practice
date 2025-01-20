@@ -620,7 +620,7 @@ body {
 
   .contact-button {
     height: 50px;
-    width: 100px;
+    width: 120px;
   }
 
   .page-3-top p {
@@ -676,8 +676,7 @@ body {
 
   .contact-button {
     height: 50px;
-    width: 100px;
-    padding: 10px 10px;
+    width: 120px;
   }
   .hamburg {
     display: flex;
@@ -782,9 +781,9 @@ body {
   .page-3-top h2 {
     font-size: 20px;
   }
-  .contact-button {
+    .contact-button {
     height: 50px;
-    width: 100px;
+    width: 120px;
   }
   .hamburg {
     display: flex;
