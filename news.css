@@ -488,12 +488,20 @@ footer {
     gap: 20px;
   }
 
+  .lower-footer {
+    flex-direction: column-reverse;
+  }
+
   .lower-footer img {
     width: 200px;
     height: 70px;
+    padding: 50px 0%;
   }
 
   .end-footer p {
+    font-weight: 500;
+    width: 70%;
     font-size: 30px;
+    text-align: center;
   }
 }
