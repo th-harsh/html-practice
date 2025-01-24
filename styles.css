@@ -65,7 +65,7 @@ body {
   color: white;
   text-decoration: none;
   margin: 0 1.6rem;
-  font-size: 23px;
+  font-size: 24px;
 }
 .hamburg {
   display: none;
@@ -478,8 +478,8 @@ body {
 /* Horizontal Scrolling for the List */
 .page-4-bottom-upper {
   display: flex;
-  justify-content: space-evenly;
-  gap: 80px;
+  justify-content: space-around;
+  gap: 120px;
   font-size: 20px;
   margin-top: 3rem;
   color: white;
