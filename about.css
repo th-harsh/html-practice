@@ -303,7 +303,7 @@ a{
 
 .seven-part{
     background-color: #E3DAD2;
-    width: 100vw;
+    width: 100%;
     /* height: 150vh; */
 }
 .seven-part section>h3{
@@ -357,7 +357,7 @@ a{
     font-size: 1.2rem;
 }
 .advisors-section {
-    padding: 0 4vw;
+    padding: 0vh 4vw 10vh;
 }
 .advisors-section ul{
     display: flex;
