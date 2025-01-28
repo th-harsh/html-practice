@@ -98,11 +98,6 @@ a{
     height: 100%;
 }
 
-.first-part{
-    /* max-width: 100vw; */
-    /* height: 50vw; */
-}
-
 .first-part .start{
     position: relatives;
     width: 100%;
@@ -124,7 +119,7 @@ a{
 }
 
 .second-part h1{
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     font-family: VisbySemibold;
     padding: 2vw 0;
     line-height: 1;
@@ -147,7 +142,7 @@ a{
     background: linear-gradient(to bottom, rgba(227, 218, 210, 0.886),rgba(227, 218, 210, 0.788)), url("https://images.squarespace-cdn.com/content/v1/657c413edd52fa6c45683353/31bac1e5-c1d2-4d73-beb2-893e069a94c7/Potential-Contours.png?format=1500w") no-repeat center;
 }
 .third-part h3:first-child{
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     font-family: VisbySemibold;
     padding: 2rem 0 2rem;
     line-height: 1;
@@ -610,26 +605,55 @@ a{
         font-size: 1.2rem;
     }
     .ourteam-img {
-        height: 30vh;
+        /* height: 30vh;
+         */
+         height: 18rem;
+         width: 20rem;
+         margin: 0 1rem;
+    }
+    .leadership-heading {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
     }
     .ten-part>div{
         font-size: 1.3rem;
     }
-    .signup-form{
-        width: 70%;
+    .ten-part {
+        height: 12rem;
     }
     .inner-container {
-        padding: 3rem 2rem 0rem 3rem;
+        padding: 2rem 6rem 0rem 1.5rem;
     }
-    /* .nav-links li:not(:last-child){
+    .inner-container h3{
+        font-size: 1.4rem;
+    }
+    .inner-container li a{
+        font-size: 1.1rem;
+    }
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .nav-links li:not(:last-child){
         display: none;
-    } */
-    /* .burger-icon svg{
+    } 
+    .burger-icon svg{
         display: block;
-        float: right;
-    } */
-    .footer-bottom{
-        /* height: 60vh; */
+        justify-self: right;    
+    }
+    .advisors-section h2 {
+        font-size: 1.4rem;
+        font-weight: 900;
+    }
+    .signup-form>input{
+        width: 90%;
+        margin: 0;
+    }
+    .signup-form>button{
+        margin: auto;
+    }
+    .signup-form h4{
+        font-size: 1.5rem;
     }
     .img-4{
         width: 100%;
@@ -638,16 +662,13 @@ a{
     .img-4>img{
         width: 100%;
     }
-    .paragraph-2{
-        
-    }
     .paragraph-2 > span{
         font-size: 1.5rem;
         font-weight: bold;
     }
     .paragraph-2 > p>strong{
         font-size: 1.05rem;
-        padding: 0.7rem 0rem;
+        padding: 0.8rem 0rem;
     }
     .paragraph-2 > p{
         font-size: 1.05rem;
