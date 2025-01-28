@@ -448,6 +448,7 @@ a{
     border-bottom: #000 solid 2px;
     color: #000;
     font-style: italic;
+    white-space: nowrap;
     margin-left: 0.5rem;
 }
 
@@ -600,7 +601,10 @@ a{
     font-weight: bold;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 800px){
+    .logo-icon a img {
+        max-height: 25px;
+    }
     .six-part ul li>button{
         font-size: 1.2rem;
     }
@@ -661,6 +665,10 @@ a{
     }
     .img-4>img{
         width: 100%;
+    }
+    .paragraph {
+        padding-left: 2rem;
+        padding-right: 3rem;
     }
     .paragraph-2 > span{
         font-size: 1.5rem;
@@ -781,6 +789,9 @@ a{
     .signup-form h4{
         font-size: 1.2rem;
         width: 80%;
+    }
+    .signup-form>button{
+        margin: 0;
     }
     .signup-form>input{
         width: 90%;
