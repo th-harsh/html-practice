@@ -689,7 +689,7 @@ a{
     }
     .fifth-part article section {
         width: 100%;
-        /* height: 60vh; */
+        height: 25rem;
     }
     .six-part>h3 {
         padding: 2rem 0;
@@ -752,10 +752,14 @@ a{
         display: flex;
         flex-direction: column;
         align-items: last;
-        height: 70%;
+        height: 54rem;
         width: 100%;
         justify-content: space-around;
         padding-left: 1rem;
+    }
+    .signup-form h4{
+        font-size: 1.2rem;
+        width: 80%;
     }
     .signup-form>input{
         width: 90%;
@@ -811,7 +815,7 @@ a{
         height: 65vh;
     }
     .first-part .start strong {
-        top: 55vh;
+        top: 42vh;
         font-size: 2.8rem;
     }
     .section p{
@@ -853,6 +857,16 @@ a{
     .inner-container a {
         font-size: 1.1rem;
         font-family: VisbySemiBold;
+    }
+    .leadership-heading {
+        padding: 1rem 0rem 2rem 0rem;
+    }
+    .seven-part section:first-child {
+        height: 38rem;
+        
+    }
+    .advisors-section {
+        padding: 0vh 0vw 5rem;
     }
 }
 
