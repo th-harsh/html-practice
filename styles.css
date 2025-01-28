@@ -131,10 +131,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   height: 65px;
-  width: 150px;
-  background-color: transparent;
+  width: 191px;
+  background-color: transparent important;
   margin-top: 10px;
 }
 
@@ -591,9 +592,12 @@ body {
     align-items: center;
   } */
 
-  /* .page-4-bottom-lower-left img {
-    width: 80%; 
-  } */
+  .page-4-bottom-lower .page-4-bottom-lower-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   /* .page-4-bottom-lower-right {
     text-align: center; 
@@ -936,7 +940,7 @@ body {
   .page-4-bottom-lower-left {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     /* justify-content: flex-end; */
   }
   .page-4-bottom-lower-left img {
