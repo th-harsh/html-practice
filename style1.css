@@ -259,7 +259,7 @@
 }
 .rightpart2 li{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 35px;
     
     line-height: 24px;
@@ -277,9 +277,9 @@
     height: 33px;
     margin-right: 20px;
 
-    vertical-align: middle;
+    vertical-align:super;
 
-    background: url('./assets/white-arrow.png') no-repeat left center;
+    background: url('./assets/white-arrow.png') no-repeat left top;
     background-size: contain;
 
     content: '';
@@ -398,7 +398,7 @@
 }
 .cright li{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin: 24px 0;
     line-height: 30px;
     font-size: 18px;
